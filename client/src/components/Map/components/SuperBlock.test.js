@@ -56,7 +56,7 @@ test('<SuperBlock should handle toggle clicks correctly', () => {
 
   expect(toggleSpy).not.toHaveBeenCalled();
   expect(container.querySelector('.map-title h4')).toHaveTextContent(
-    'Super Block One Certification (300 hours)'
+    'Super Block One Certification'
   );
   expect(container.querySelector('ul')).not.toBeInTheDocument();
 

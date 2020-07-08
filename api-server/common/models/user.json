@@ -257,7 +257,7 @@
         "isLocked": true,
         "showAbout": false,
         "showCerts": false,
-        "showDonation": false,
+        "_comment": "showDonation  false,",
         "showHeatMap": false,
         "showLocation": false,
         "showName": false,
@@ -274,25 +274,12 @@
         }
       },
       "default": {}
+   
     },
-    "donationEmails": {
-      "type": [
-        "string"
-      ]
-    },
-    "isDonating": {
-      "type": "boolean",
-      "description": "Does the camper have an active donation",
-      "default": false
-    }
-  },
+  
   "validations": [],
   "relations": {
-    "donations": {
-      "type": "hasMany",
-      "foreignKey": "",
-      "modal": "donation"
-    },
+   
     "credentials": {
       "type": "hasMany",
       "model": "userCredential",
@@ -399,4 +386,5 @@
     }
   ],
   "methods": {}
+}
 }

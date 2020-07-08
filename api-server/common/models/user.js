@@ -433,16 +433,16 @@ export default function(User) {
     )({ ttl });
   };
 
-  User.prototype.createDonation = function createDonation(donation = {}) {
-    return Observable.fromNodeCallback(
-      this.donations.create.bind(this.donations)
-    )(donation).do(() =>
-      this.updateAttributes({
-        isDonating: true,
-        donationEmails: [...(this.donationEmails || []), donation.email]
-      })
-    );
-  };
+  // User.prototype.createDonation = function createDonation(donation = {}) {
+  //   return Observable.fromNodeCallback(
+  //     this.donations.create.bind(this.donations)
+  //   )(donation).do(() =>
+  //     this.updateAttributes({
+  //       isDonating: true,
+  //       donationEmails: [...(this.donationEmails || []), donation.email]
+  //     })
+  //   );
+  // };
 
   function requestCompletedChallenges() {
     return this.getCompletedChallenges$();
@@ -763,7 +763,7 @@ export default function(User) {
       about,
       calendar,
       completedChallenges,
-      isDonating,
+      // isDonating
       location,
       name,
       points,
@@ -776,7 +776,7 @@ export default function(User) {
       isLocked = true,
       showAbout = false,
       showCerts = false,
-      showDonation = false,
+      // showDonation = false,
       showHeatMap = false,
       showLocation = false,
       showName = false,
@@ -807,7 +807,7 @@ export default function(User) {
           return [];
         }
       })(),
-      isDonating: showDonation ? isDonating : null,
+      // isDonating: showDonation ? isDonating : null,
       location: showLocation ? location : '',
       name: showName ? name : '',
       points: showPoints ? points : null,

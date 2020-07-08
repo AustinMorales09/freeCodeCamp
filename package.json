@@ -2,6 +2,12 @@
   "name": "@freecodecamp/freecodecamp",
   "private": true,
   "version": "0.0.1",
+  "engines": 
+  {
+    "node": "12.x"
+
+  },
+
   "scripts": {
     "audit": "npm audit & lerna exec --no-bail 'echo $LERNA_PACKAGE_NAME & npm audit'",
     "audit:fix": "npm audit fix & lerna exec 'echo $LERNA_PACKAGE_NAME & npm audit fix'",
@@ -123,5 +129,20 @@
       "pre-commit": "lint-staged"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "description": "![freeCodeCamp.org Social Banner](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)",
+  "main": "cypress-install.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AustinMorales09/freeCodeCamp.git"
+  },
+  "author": "Austin Morales",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AustinMorales09/freeCodeCamp/issues"
+  },
+  "homepage": "https://github.com/AustinMorales09/freeCodeCamp#readme"
 }

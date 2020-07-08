@@ -45,7 +45,7 @@ function Intro({
           <Col sm={10} smOffset={1} xs={12}>
             <Spacer />
             <h1 className='text-center big-heading'>
-              {name ? `Welcome back, ${name}.` : `Welcome to freeCodeCamp.org`}
+              {name ? `Welcome back, ${name}.` : `Welcome to Kable Academy.org`}
             </h1>
             <Spacer />
           </Col>
@@ -103,23 +103,23 @@ function Intro({
           <Col sm={10} smOffset={1} xs={12}>
             <Spacer />
             <h1 className='big-heading text-center'>
-              Welcome to freeCodeCamp.org
+              Welcome to Kable Academy
             </h1>
             <Spacer />
             <h2 className='medium-heading'>Learn to code at home.</h2>
             <h2 className='medium-heading'>Build projects.</h2>
-            <h2 className='medium-heading'>Earn certifications.</h2>
+            {/* <h2 className='medium-heading'>Earn certifications.</h2>
             <h2 className='medium-heading'>
               Since 2014, more than 40,000 freeCodeCamp.org graduates have
               gotten jobs at tech companies including:
-            </h2>
-            <div className='logo-row'>
+            </h2> */}
+            {/* <div className='logo-row'>
               <h2 className='medium-heading'>Apple</h2>
               <h2 className='medium-heading'>Google</h2>
               <h2 className='medium-heading'>Amazon</h2>
               <h2 className='medium-heading'>Microsoft</h2>
               <h2 className='medium-heading'>Spotify</h2>
-            </div>
+            </div> */}
             <Spacer />
           </Col>
 

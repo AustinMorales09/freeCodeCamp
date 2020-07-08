@@ -13,6 +13,6 @@ function User() {
   );
 }
 
-User.displayName = 'User';
+User.displayName = 'Face';
 
 export default User;

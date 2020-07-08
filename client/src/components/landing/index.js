@@ -44,7 +44,7 @@ export const Landing = ({ nodes }) => {
   return (
     <Fragment>
       <Helmet>
-        <title>Learn to code at home | freeCodeCamp.org</title>
+        <title>Learn to code at home | KableAcademy</title>
       </Helmet>
       <main className='landing-page'>
         <Spacer />
@@ -55,28 +55,23 @@ export const Landing = ({ nodes }) => {
                 className='big-heading text-center'
                 data-test-label='landing-header'
               >
-                Welcome to freeCodeCamp.org
+                Welcome to Kable Academy
               </h1>
               <Spacer />
               <h2 className='medium-heading text-center'>
                 Learn to code at home.
               </h2>
               <h2 className='medium-heading text-center'>Build projects.</h2>
-              <h2 className='medium-heading text-center'>
+              {/* <h2 className='medium-heading text-center'>
                 Earn certifications.
-              </h2>
-              <h2 className='medium-heading text-center'>
-                Since 2014, more than 40,000 freeCodeCamp.org graduates have
-                gotten jobs at tech companies including:
-              </h2>
-              <CompanyLogos />
+              </h2> */}
             </Col>
           </Row>
           <Spacer />
           <BigCallToAction />
           <Spacer />
-          <AsFeaturedSection />
-          <Row>
+
+          {/* <Row>
             <Col sm={10} smOffset={1} xs={12}>
               <h2 className='medium-heading'>Certifications:</h2>
               <ul>
@@ -89,17 +84,10 @@ export const Landing = ({ nodes }) => {
                 ))}
               </ul>
               <Spacer />
-              <h2 className='medium-heading'>Additional Learning:</h2>
-              <ul>
-                <li>
-                  <Link state={{ superBlock: interviewPrep }} to={`/learn`}>
-                    <h2 className='medium-heading'>{interviewPrep}</h2>
-                  </Link>
-                </li>
-              </ul>
+       
             </Col>
           </Row>
-          <Spacer />
+          <Spacer /> */}
         </Grid>
       </main>
     </Fragment>
