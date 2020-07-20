@@ -61,7 +61,7 @@ function ToolPanel({
         >
           {isMobile ? 'Reset' : 'Reset All Code'}
         </Button>
-        <DropdownButton
+        {/* <DropdownButton
           block={true}
           bsStyle='primary'
           className='btn-invert'
@@ -94,7 +94,7 @@ function ToolPanel({
           >
             {'Ask for help'}
           </MenuItem>
-        </DropdownButton>
+        </DropdownButton> */}
       </div>
     </Fragment>
   );
